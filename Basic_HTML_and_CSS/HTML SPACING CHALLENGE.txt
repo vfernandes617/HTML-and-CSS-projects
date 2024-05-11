@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<section>
+	<h1>Zelda</h1>
+		<p><span style="font-style: bold;font-weight:italic"> Zelda is a very good game but people say otherwise</span> 
+		.<br> Valter fernandes </p>
+</secton>
+<p> the time is 22:00&nbsp;a.m</p>
+<p> all rights are reserved &copy </p>
+</html>
