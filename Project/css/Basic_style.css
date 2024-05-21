@@ -71,7 +71,7 @@ Individually select a square in the array
         animation-timing-function: cubic-bezier(2.5, .2,.3,2);
 }
 
-.squares:nth-child(1) :hover {
+.squares:nth-child(1):hover {
     background: #13b4ff;
 }
 .squares:nth-child(2):hover {
