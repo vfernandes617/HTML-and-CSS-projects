@@ -11,7 +11,7 @@ h1 {
 .container {
     width: 450px;
     height: 450px;
-    background-color: #faebd7:
+    background-color: #faebd7;
     border: 2px solid black;
     border-radius:5%;
 }
@@ -19,8 +19,8 @@ h1 {
 /*-----------------------------------------------------------------------------
 SELECT ALL SQUAURES IN THE ARRAY
 -------------------------------------------------------------------------------*/
-.container .squares:nth-child(=n+4) {
-    background-image:url("../images/icons/smileyface2.png")
+.container .squares.sqaures:nth-child(-n+4) {
+    background-image:url("../images/icons/smileyface2.png") ;
     color:#fff;
     float:left;
     width:100px;
@@ -38,7 +38,7 @@ SELECT ALL SQUAURES IN THE ARRAY
 .sqaures:nth-child(-n+4) p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
-    font-wieght: 900;
+    font-weight:900;
     text-align: center;
     margin: 0;
     text-shadow: 2px 1px 4px rgba(0,0,0,0.8);
@@ -47,7 +47,7 @@ SELECT ALL SQUAURES IN THE ARRAY
 /*-----------------------------------------------------------------
     HOVER, TRANSLATE & TRANSFORM EFFECTS
     --------------------------------------------------------------*/
-.container .squares: nth-child(-n+4) :hover {
+.container .squares:nth-child(-n+4) :hover {
         background-image: url("../images/icons/smileyface1.png");
         transform: scale(.5);
         animation-name:race;
@@ -55,14 +55,15 @@ SELECT ALL SQUAURES IN THE ARRAY
         animation-iteration-count: infinite;
         animation-timing-function: cubic-bezier(2.5, .2,.3,2);
 }
-.squares:nth-child (1) :hover {
+
+.squares:nth-child(1) :hover {
     background: #13b4ff;
 }
 .squares:nth-child(2):hover {
     background:#d861af;
 }
 .squares:nth-child(3):hover {
-    background:##81205f;
+    background:#81205f;
 }
 .squares:nth-child(4):hover {
     background:#77b800;
@@ -80,4 +81,3 @@ SELECT ALL SQUAURES IN THE ARRAY
     }
 }
     
-}    
