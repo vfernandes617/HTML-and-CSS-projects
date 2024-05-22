@@ -46,10 +46,10 @@ SELECT ALL SQUAURES IN THE ARRAY
 */----------------------------------------------
 Individually select a square in the array
 ----------------------------------------------*/
-.sqaures:nth-child(1) {
+.squares:nth-child(1) {
     background: #4240ff;
 }
-.sqaures:nth-child(2) {
+.squares:nth-child(2) {
     background: #ab3fdd;
 }
 .squares:nth-child(3) {
@@ -62,7 +62,7 @@ Individually select a square in the array
 /*-----------------------------------------------------------------
     HOVER, TRANSLATE & TRANSFORM EFFECTS
     --------------------------------------------------------------*/
-.container .squares:nth-child(-n+4) :hover {
+.container .squares:nth-child(-n+4):hover {
         background-image: url("../images/icons/smileyface1.png");
         transform: scale(.5);
         animation-name:race;

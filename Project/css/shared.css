@@ -35,7 +35,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #e91c1c;
-    text-shadow: 2px 2px 3px rgba (0,0,0,0.5);   
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);   
 }
 
 h1::after { /* This is the underline */
@@ -133,7 +133,7 @@ section {
     width: 100%;
     position: fixed;
     z-index: 100;
-    /* background-color: rgba (255,255,255,0.5);*/
+    /* background-color: rgba(255,255,255,0.5);*/
 }
 
 /*---------------------------------------
@@ -248,7 +248,7 @@ section {
     margin: 2% auto;
     border-radius: 7px;
     background: rgb (227,22,222);
-    box-shadow: 2px 3px 3px 0 rgba (0,0,0,0.3);
+    box-shadow: 2px 3px 3px 0 rgba(0,0,0,0.3);
     font-family: 'Raleway', sans-serif;
 }
 .reservation input [type="text"] {
@@ -264,11 +264,11 @@ section {
     margin: 10px 1em;
     border-radius: 7px;
     background: #13161b;
-    box-shadow: inset 0px 3px 0px rgba (5,5,5,0.15);
+    box-shadow: inset 0px 3px 0px rgba(5,5,5,0.15);
     font-family: 'raleway', sans-serif;
 }
 .reservation input [type="text"] :hover {
-    box-shadow: 0 0 18px rgba (100, 65 ,0, .8);
+    box-shadow: 0 0 18px rgba(100, 65 ,0, .8);
 }
 .form-spacer {
     padding: 30px 39px;
@@ -307,21 +307,21 @@ section {
     transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius: 7px;
     background-color: #797a7b;
-    box-shadow: 1px 1px 4px 0 rgba (0,0,0,0.3);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 .submit input [type="submit"]:hover {
     color:#000;
     background-color: #8d8e8f;
-    box-shadow: inset 1px 2px 15px rgba (0,0,0,0.5)
+    box-shadow: inset 1px 2px 15px rgba(0,0,0,0.5)
 
 }
 /*---------------------------------------
 Footer Styles
 -------------------------------*/
 #footer {
-    background-color: rgba (100,65,0,.3);
+    background-color: rgba(100,65,0,.3);
     color:#000;
-    text-shadow: 2px 2px 8px 0 rgba (0,0,0,1);
+    text-shadow: 2px 2px 8px 0 rgba(0,0,0,1);
     padding: 20px 50px 20px 50px;
     text-align: right;
 }
