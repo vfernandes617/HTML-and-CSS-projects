@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="./css/nine.css">
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+<div class="main">
+    <p>Nav bar</p>
+</div>
+<style>
+    .container {
+      position: relative;
+      width: 50%;
+    }
+    
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #b7460a;
+    }
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    </style>
+
+    <div class="container">
+        <img src="./img/ninetales.jpg" alt="Ninetales" class="center">
+        <div class="centered"><p style="font-size: larger;">Ninetales by Volthero</p></div>
+        <div class="overlay">
+            <div class="text"> Hello World
+            </div>
+        </div>
+    </div>  
+
+    <h1>Ninetales Site</h1>
+    <p>All Challenges are here!</p>
+    <table>
+        <tr>
+            <th>one tales</th>
+            <th>two tales</th>
+            <th>three tales</th>
+            <th>four tales</th>
+            <th>five tales</th>
+            <th>six tales</th>
+            <th>seven tales</th>
+            <th>eight tales</th>
+            <th>nine tales</th>
+        </tr>
+    </table>
+        <p>Kitsune have as many as nine tails. Generally, a greater number of tails indicates an older
+         and more powerful Kitsune; in fact, some folktales say that a fox will only grow additional tails after it has lived 100 years</p>
+
+    <div class="row">
+        <div class="column">Column 1
+            <div class="container">
+                <video src="./img/foxrunning.mp4" alt="Fox" controls muted autoplay loop width="620" height="440">
+                    <div class="bottom-left">Bottom Left</div>
+                    <div class="top-left">Top Left</div>
+                    <div class="top-right">Top Right</div>
+                    <div class="bottom-right">Bottom Right</div>
+                    <div class="centered">Centered</div>
+                </video>
+            </div>
+        </div>
+        <div class="column">column 2
+            <video width="620" height="440" controls muted autoplay loop>
+                <source src="./img/fox.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
+<footer>
+    <p> Author: Volthero</p>
+    <p>&copy; 2024 Ninetales Fox site, All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,117 @@
+body {
+    background-color: lightcoral
+    
+}
+img {
+    width: 500px;
+    border: 3px solid red;
+    border-radius: 30px;
+}
+footer {
+    text-align: center;
+    font-weight:bold
+}
+table,tr,th {
+border: 3px solid;
+padding: 10px;
+}
+table tr:nth-child(1) {
+    background-color: rgb(156, 15, 15);
+}
+.container {
+    position:absolute;
+    text-align: center;
+    color: cornflowerblue;
+}
+.centered {
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color:#234;
+    position: fixed;
+    top: 0;
+    width: 100px;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background: #f2245f;
+    color:black;
+}
+.main {
+    margin-top: 30px;
+}
+.row {
+    column-gap: 100px;
+    color: #f2245f;
+    border: solid;
+    border-radius: 10%;
+  
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.row::after {
+    content:"";
+    display: table;
+    clear: both;
+    height:20px;
+}
+p:hover {
+    background-color: rgb(220, 63, 15);
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color:#f2245f
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
