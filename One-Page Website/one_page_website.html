@@ -33,15 +33,52 @@
 				<div>
 				
 				<!--Photo Container 1-->
-							<img src="./images/300px-Agumon_Survive.jpg" alt="picture of Agumon">
 							<div>
-							`	<h3>Click to enlarge</h3>
+								<img src="./images/300px-Agumon_Survive.jpg" alt="picture of Agumon"
+								style="width:300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">						
+								<h3>Click to enlarge</h3>
 								<p>Agumon<p>
 							</div>								
 				</div>
 			</div>	
 	</section>		
 					<!--End Photo Container 1-->
+					<!--Photo Container 2-->
+					<div>
+						<img src="./images/Greymon.png" alt="picture of Greymon"
+						style="width:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+						<h3>Click to enlarge</h3>
+						<p>Greymon<p>
+					</div>								
+		</div>
+	</div>	
+</section>		
+			<!--End Photo Container 2-->
+			<!--Photo Container 3-->
+			<div>
+				<img src="./images/war.png" alt="picture of WarGreymon"
+				style="width: 300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				<h3>Click to enlarge</h3>
+				<p>WarGreymon<p>
+			</div>	
+
+</div>
+</div>	
+</section>		
+	<!--End Photo Container 3-->
+						<!--Photo Container 4-->
+						<div>
+							<img src="./images/metal.png" alt="picture of MetalGreymon"
+							style="width:300px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+							<h3>Click to enlarge</h3>
+							<p>MetalGreymon<p>
+						</div>								
+			</div>
+		</div>	
+	</section>		
+				<!--End Photo Container 4-->
+			
+					
 <!--contact form-->
 <h2>Contact Us</h2>
 
@@ -66,8 +103,72 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/5CrHoTb8Ykc?si=6fSvGvyeJ54EuGxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 <!--end end of video-->
+<h2 style="text-align:center">Light Box example</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="./images/300px-Agumon_Survive.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/Greymon.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/metal.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./images/war.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./images/300px-Agumon_Survive.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./images/Greymon.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./images/metal.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./images/war.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="./images/300px-Agumon_Survive.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/Greymon.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/metal.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./images/war.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
 
  <footer>
         <p>End of the Digimon onepage site.</p>
+		<script src="./js/one_page_website.js"></script>
     </footer>
 </html>
