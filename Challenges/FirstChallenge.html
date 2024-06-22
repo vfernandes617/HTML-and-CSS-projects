@@ -3,8 +3,43 @@
     <link rel="stylesheet" href="./css/nine.css">
 <head>
     <title>Page Title</title>
+    <!--Java script form validation-->
+    <script>
+        function validateForm() {
+            let x=document.forms["myForm"]["pnumber"].value;
+            if (x=="") {
+                alert("Number must be filled out");
+                return false;
+            }
+        }
+    </script>
+   
 </head>
 <body>
+    <!--smooth scroll-->
+    <div class="main" id="section1">
+        <h2>section 1</h2>
+        <p>click on the link to see the "smooth" effect</p>
+        <a href="#section2">Click Me to smooth scroll to section 2</a>
+        <p>Note: remove the scroll-behavior property to remove smooth scrolling</p>
+    </div>
+    <div class="main" id="section2">
+        <h2>section2</h2>
+        <a href="#section1">click me to scroll to section 1</a>
+    </div>
+    </div>
+    <!--Form function in java-->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display="block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display="none";
+        }
+    </script>
+    <script>
+        document.body.classList.add('add-out');
+    </script>
 <div class="navbar">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -13,6 +48,7 @@
 <div class="main">
     <p>Nav bar</p>
 </div>
+<p style="font-size:5vw;">Ninetales fox </p>
 <style>
     .container {
       position: relative;
@@ -100,9 +136,30 @@
             </video>
         </div>
     </div>
+    <!--a form that for phone numbers-->
+    <button class="open-button"onclick="openForm()">Openform</button>
+    <div class="form=popup" id="myForm">
+    <form name="myForm" action="/action_page.php"onsubmit="return validateForm()"method="post" class="form-container">
+        <h1>Submit your number</h1>
+        <label for="pnumber">Phone number</label><br>
+        <input type="text" placeholder="enter in your Phone number" id="pnumber"name="pnumber"><br>
+
+        <label for="fullname">Full Name</label><br>
+        <input type="text" placeholder="enter in Full name" id="fullname" name="fullname">
+        <button type="submit"value="Submit" class="btn">submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">close</button>
+    </form>
+</div>
+    <!--end of form-->
+   <script>
+    window.addEventListener('DOMContentLoaded',()=>{
+        document.body.classList.remove('fade-out');
+    });
+   </script>
 </body>
 <footer>
     <p> Author: Volthero</p>
     <p>&copy; 2024 Ninetales Fox site, All rights reserved.</p>
 </footer>
+
 </html>

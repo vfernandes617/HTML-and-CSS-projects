@@ -2,6 +2,8 @@
 <html>
     <body>
         <p id="XML_Example"></p>
+     
+
         <script>
             var XML_Parser, XML_Document;
 
@@ -21,5 +23,21 @@
 
         document.getElementById("XML_Example").innerHTML= XML_Document.getElementById("title")[0].childNodes[0].nodeValue;
     </script>
+    <!-- this code breaks evertthing animations
+ 
+-->
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background:rgb(218, 91, 91);
+        position: relative;
+        animation: mymove 5s infinite;
+    }
+    @keyframes mymove{
+        form {top:0px;}
+        to {top:200px;}
+    }
+</style>
     </body>
 </html>

@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width"initial-scale=1/>
+    <style>
+      div.sticky {
+        position: -webkit-sticky;
+        position:sticky;
+        top: 0;
+        background-color: teal;
+        padding: 50px;
+        font-size: 20px;
+      }
+    </style>
     
 <title>Page Title</title>
 </head>
 <link rel="stylesheet" href="./css/media.css">
 <body>
+  <div class="sticky"> O wo;; stocl tp the screen when you scroll</div>
+  <P>In a forgotten corner of the galaxy, nestled amidst a swirling nebula, existed a library unlike any other. Here, stories weren't confined to dusty pages, they were living, breathing entities. Each tale resided within a peculiar glass vial, shimmering with the essence of its narrative. Elara, a young woman with eyes like twilight, was the library's guardian.
+
+    One day, a tremor shook the library. A vial, labelled "The Lost Song," had shattered, releasing its story into the cosmic air. Whispers of a forgotten melody and a kingdom shrouded in silence filled the library. Elara knew she had to mend the story.
+    
+    Following whispers on the wind, she ventured out into the nebula. Her journey led her to a desolate planet, its once vibrant music reduced to an eerie quiet. Here, she encountered a lonely prince, the sole heir to a kingdom cursed by silence. The story's essence – the Lost Song – was his birthright, the key to breaking the curse.
+    
+    Together, Elara and the prince embarked on a quest. They followed clues hidden within constellations, deciphered ancient riddles whispered by nebulae, and braved storms of forgotten words. Elara's knowledge of stories and the prince's determination to reclaim his song led them closer to the fragments of the lost tale.
+    
+    Finally, they reached a colossal, abandoned music hall. There, amidst cobwebs and broken instruments, they found the missing pieces of the vial. As Elara carefully reassembled the vial, the night sky shimmered, and constellations rearranged themselves, forming a magnificent score. The prince, guided by the celestial music, picked up a long-forgotten lute and began to play.
+    
+    The Lost Song filled the air, a melody both melancholic and hopeful. As the last note faded, the silence that had shrouded the kingdom shattered. Birds sang, wind rustled through leaves, and laughter echoed through the once-silent streets. The curse was broken, the kingdom awakened by the power of the story.
+    
+    Elara, having helped restore the tale, returned to the library, a newfound respect for the power of stories burning bright in her eyes. The Lost Song, now mended, shimmered anew, a testament to the day a librarian and a prince brought music back to a silent world.</P>
+  <div id="slideshow">
+
+    <div>
+
+      <img src="./img/ninetales.jpg">
+    </div>s
+    <div>
+
+      <img src="./img/images.jfif"
+    </div>
+  </div>
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
@@ -26,5 +61,17 @@
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
+<script>
+  $('#slideshow>div:gt(0').hide();
+  
+  setInterval(function(){
+    $('#slideshow>div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+  },3000);
+</script>
 </body>
 </html>
